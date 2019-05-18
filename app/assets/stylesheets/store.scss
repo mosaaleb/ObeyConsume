@@ -1,10 +1,12 @@
 
 .store {
-  max-width: 70%;
+  background: #eeeeee;
+  width: 85%;
   margin: 0 auto;
   h1 {
-    text-align: center;
-    padding: 1em;
+    font-size: 2em;
+    padding-left: .48em;
+    font-weight: bold;
   }
   ul.catalog {
     padding: 1em;
@@ -14,7 +16,7 @@
     margin: 0;
     li {
       padding: 1em;
-      margin: 0;
+      margin: 1em;
       border-bottom: solid thin #ddd;
 
       // This makes sure our <li> has enough height
@@ -25,12 +27,11 @@
         display: block;
       }
       img {
-        float: left;
-        padding: 1em;
-        margin-top: 1em;
-        margin-right: 2em;
-        margin-bottom: 2em;
+        margin: 1em 2em 2em 0;
         box-shadow: 0.175em 0.175em 0.354em rgba(0,0,0,0.75);
+        @media (min-width: 40em) {
+          float: left;
+        }
       }
       .price {
         font-size: 1.414em;
