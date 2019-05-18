@@ -6,48 +6,27 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 Product.delete_all
-Product.create!(title: 'Rails, Angular, Postgres, and Bootstrap',
+Product.create!(title: 'Samsung Chromebook (Wi-Fi, 11.6-Inch) - Silver (Renewed)',
   description:
     %{<p>
-      <em>Powerful, Effective, and Efficient Full-Stack Web Development</em>
-      As a Rails developer, you care about user experience and performance,
-      but you also want simple and maintainable code. Achieve all that by
-      embracing the full stack of web development, from styling with
-      Bootstrap, building an interactive user interface with AngularJS, to
-      storing data quickly and reliably in PostgreSQL. Take a holistic view of
-      full-stack development to create usable, high-performing applications,
-      and learn to use these technologies effectively in a Ruby on Rails
-      environment.
+      <em>The Samsung Chromebook</em> is a new computer that helps you get everyday things done faster and easier. It starts in seconds, has virus protection built-in, and runs your favorite Google apps plus thousands more. The Chromebook comes with leading Google products, like Search, Gmail, YouTube and Hangouts, so you can work, play, and do whatever you want, right out of the box. Chromebooks are a unique class of mobile computing devices designed for Web-based tasks. They run the Google Chrome OS, are perfect for browsing the Web, sending and receiving e-mail, and video chatting with friends and family. You can easily share it with multiple people - everyone gets their own files, apps and settings. And it's simple to use.
       </p>},
-  image_url: 'dcbang.jpg',    
-  price: 45.00)
+  image_url: 'samsung11.6.jpg',    
+  price: 119.00)
 # . . .
-Product.create!(title: 'Seven Mobile Apps in Seven Weeks',
+Product.create!(title: 'Corsair Gaming K65 LUX RGB Compact Mechanical Keyboard (Renewed)',
   description:
     %{<p>
-      <em>Native Apps, Multiple Platforms</em>
-      Answer the question “Can we build this for ALL the devices?” with a
-      resounding YES. This book will help you get there with a real-world
-      introduction to seven platforms, whether you’re new to mobile or an
-      experienced developer needing to expand your options. Plus, you’ll find
-      out which cross-platform solution makes the most sense for your needs.
+      <em>With virtually unlimited customization directly integrated into Corsair's legendary construction</em>, the LUX line of gaming keyboards is the key to breaking through the competition. Express yourself with programmable advanced lighting control and large font keycaps, and transform your gameplay with on-the-fly macro programming. Loaded into a rugged aluminum body, Corsair LUX keyboards provide the ultimate experience for every situation.
       </p>},
-  image_url: '7apps.jpg',
-  price: 26.00)
+  image_url: 'corsairmech.jpg',
+  price: 128.00)
 # . . .
 
-Product.create!(title: 'Ruby Performance Optimization',
+Product.create!(title: 'Apple iPhone 6S AT&T 16GB - Gold (Renewed)',
   description:
     %{<p>
-      <em>Why Ruby Is Slow, and How to Fix It</em> 
-      You don’t have to accept slow Ruby or Rails performance. In this
-      comprehensive guide to Ruby optimization, you’ll learn how to write
-      faster Ruby code—but that’s just the beginning. See exactly what makes
-      Ruby and Rails code slow, and how to fix it. Alex Dymo will guide you
-      through perils of memory and CPU optimization, profiling, measuring,
-      performance testing, garbage collection, and tuning. You’ll find that
-      all those “hard” things aren’t so difficult after all, and your code
-      will run orders of magnitude faster.
+      <em>This update to the popular iPhone 6 adds 3D Touch Control</em> which lets users deliberately choose between a light tap, a press, and a "deeper" press,triggering a range of specific controls. Other notable additions include the Apple A9 chipset, and a 12MP rear camera with 4K resolution video recording. This Amazon Certified device is in EXCELLENT cosmetic condition, it is 100% fully functional as tested by our expert technicians and passed an industry leading 65-point inspection. The device may have minor cosmetic wear such as minimal light scratches on the screen and minor imperfections on sides and/or back. The device has been thoroughly inspected, cleaned and refurbished (if necessary) at our manufacturer approved repair center.
       </p>},
-  image_url: 'adrpo.jpg',
-  price: 46.00)
+  image_url: 'iphone6s.jpg',
+  price: 164.97)

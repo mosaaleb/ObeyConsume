@@ -8,7 +8,7 @@
     <% @products.each do |product| %>
       <% cache product do %>
         <li> 
-          <%= image_tag(product.image_url) %> 
+          <%= image_tag(product.image_url, size: '190x190', crop: :fill) %> 
           <h2>
             <%= product.title %>
           </h2>
