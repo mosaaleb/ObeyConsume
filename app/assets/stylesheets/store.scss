@@ -1,0 +1,39 @@
+
+.store {
+  max-width: 70%;
+  margin: 0 auto;
+  h1 {
+    text-align: center;
+    padding: 1em;
+  }
+  ul.catalog {
+    padding: 1em;
+    border-top: solid 0.250em;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      padding: 1em;
+      margin: 0;
+      border-bottom: solid thin #ddd;
+
+      // This makes sure our <li> has enough height
+      // to hold the entire image, since it's floated
+      &::after {
+        clear: both;
+        content: " ";
+        display: block;
+      }
+      img {
+        float: left;
+        padding: 1em;
+        margin-right: 1em;
+        margin-bottom: 1em;
+        box-shadow: 0.175em 0.175em 0.354em rgba(0,0,0,0.75);
+      }
+      .price {
+        font-size: 1.414em;
+      }
+    }
+  }
+}
