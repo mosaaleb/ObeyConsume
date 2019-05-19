@@ -1,4 +1,8 @@
 
+
+@import url('https://fonts.googleapis.com/css?family=Stardos+Stencil&display=swap');
+
+
 .store {
   background: #eeeeee;
   width: 85%;
@@ -34,7 +38,46 @@
         }
       }
       .price {
-        font-size: 1.414em;
+        padding: .5em;
+        overflow: hidden;
+
+        h3 {
+          font-size: 1.5em;
+          font-family: 'Stardos Stencil', cursive;
+        }
+
+        .button {
+          background-color: #c47135;
+          border: none;
+          color: #ffffff;
+          outline: none;
+          padding: 10px 15px;
+          position: relative;
+        }
+        .button:before,
+        .button:after {
+          border: 0 solid transparent;
+          transition: all 0.25s;
+          content: '';
+          height: 24px;
+          position: absolute;
+          width: 24px;
+        }
+        .button:before {
+          border-top: 2px solid #c47135;
+          left: 0px;
+          top: -5px;
+        }
+        .button:after {
+          border-bottom: 2px solid #c47135;
+          bottom: -5px;
+          right: 0px;
+        }
+        .button:hover:before,
+        .button:hover:after {
+          height: 100%;
+          width: 100%;
+        }
       }
     }
   }

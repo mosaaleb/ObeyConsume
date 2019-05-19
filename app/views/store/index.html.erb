@@ -9,14 +9,19 @@
       <% cache product do %>
         <li> 
           <%= image_tag(product.image_url, size: '190x190', crop: :fill) %> 
-          <h2>
-            <%= product.title %>
-          </h2>
-          <p>
-            <%= sanitize(product.description) %>
-          </p>
-          <div class="price"> 
-            <%= number_to_currency product.price %>
+          <div class="product-info">
+            <h2>
+              <%= product.title %>
+            </h2>
+            <p>
+              <%= sanitize(product.description) %>
+            </p>
+            <div class="price"> 
+              <h3><%= number_to_currency product.price %></h3>
+              <%= button_to line_items_path(product), class: 'button' do %>
+                Add to Cart
+              <% end %>
+            </div>
           </div>
         </li> 
       <% end %>
